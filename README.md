@@ -1,24 +1,69 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails の技術的キャッチアップを目的とした簡単な掲示板CRUDアプリケーションです.
 
-Things you may want to cover:
+## 機能
 
-* Ruby version
+- 掲示板
+  - 一覧表示
+    - 掲示板一覧を表示します
+    - ページネーション
+  - 新規作成
+    - 掲示板を作成します
+  - 編集
+    - 掲示板を削除します
+  - 削除
+    - 掲示板を削除します
+  - タグ検索
+    - 掲示板作成時に付けたタグで検索します
+- 掲示板コメント
+  - 投稿
+    - 掲示板にコメントを投稿します
+  - 削除
+    - 投稿したコメントを削除します
+- ユーザー認証
+  - ユーザー認証を行います
+    - ユーザー登録
+    - ログイン
+    - ログアウト
 
-* System dependencies
+## 技術スタック
 
-* Configuration
+- Server
+  - Ruby
+    - Ruby on Rails v5
+    - gem
+      - pry-byebug
+      - rails-i18n
+      - bootstrap
+      - kaminari (pagenation)
+      - rails-flog
+      - annotate
+    - Test
+      - RSpec
+  - MySQL
+- Front
+  - html
+    - erb
+  - css
+    - scss
+    - Bootstrap
+  - js
+    - JQuery
 
-* Database creation
+## 学習内容
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Railsについて
+  - 変数適宜などの基本構文
+  - resources を使用したルーティング
+  - pry-byebug を使用したデバック
+  - REST API の作成方法
+  - RSpec を使用したユニットテスト
+  - seed を使用したテストデータの作成
+  - データの validation 方法
+- erb について
+  - 変数適宜などの基本構文
+  - partial を使用した view の再利用
+  - カスタムフォーマットの作成方法
+  - フォームの作成方法
+  - フラッシュを使用したメッセージの表示
